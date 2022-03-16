@@ -3,9 +3,9 @@ import Header from "@/components/layouts/Header.vue"
 import Footer from "@/components/layouts/Footer.vue"
 </script>
 <template>
-<Header />
-  <p>gg</p>
-  <Footer />
+<!-- <Header /> -->
+  <router-view></router-view>
+<Footer />
 </template>
 
 <style lang="scss" scoped>

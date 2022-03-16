@@ -2,9 +2,19 @@
 
 </script>
 <template>
-<h1>header</h1>  
+<div id="header">
+    <ul>
+        <li>
+            <p>JS 地下城</p>
+        </li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
 </template>
 
-<style>
-
+<style lang="scss" scoped>
+#header {
+    width: 100%;
+}
 </style>
