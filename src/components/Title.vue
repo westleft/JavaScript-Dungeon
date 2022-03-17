@@ -1,34 +1,29 @@
 <script setup>
 </script>
 <template>
-    <section class="fake"></section>
+  <section class="fake"></section>
   <section class="mask">
     <h1><span>JS</span> 地下城</h1>
-    <p>
-      該專案為
-      <a target="_blank" href="https://courses.hexschool.com/p/javascript-js"
-        >六角學院 | 新手 JS 地下城
-      </a>
-      中所製作的作品集<br />
-      目前專案主要使用原生 JS 開發，部分專案使用 Vue.js<br />
-    </p>
+    <p>六角學院於西元 2019/1/13 徵召超過千位勇者加入百萬年薪遠征團，<br>
+      洧杰校長為了讓大家在踏入旅程前有練功的機會，決定在營地裡打造試煉地下城...</p>
+    
   </section>
 </template>
 
 <style lang="scss" scoped>
 section.fake {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 2;
-    position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  position: relative;
 }
 section.mask {
   @include flex(center, space-around);
   @include size(100vh, 100%);
-      top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
   position: fixed;
   z-index: 1;
   flex-direction: column;

@@ -3,7 +3,7 @@ import Header from "@/components/layouts/Header.vue";
 import Footer from "@/components/layouts/Footer.vue";
 </script>
 <template>
-  <Header />
+  <!-- <Header /> -->
   <router-view></router-view>
   <!-- <Footer /> -->
 </template>
