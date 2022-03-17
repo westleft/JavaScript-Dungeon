@@ -1,12 +1,12 @@
 @font-face {
-    font-family: Crayon;
-    src: url("../fonts/crayon.ttf");
-  }
-  @font-face {
-    font-family: WenKai;
-    src: url("../assets/fonts/LXGWWenKai-Regular.ttf");
-  }
-  
+    font-family: 'Crayon';
+    src: url("@/assets/fonts/crayon.ttf");
+}
+@font-face {
+    font-family: 'WenKai';
+    src: url("@/assets/fonts/LXGWWenKai-Regular.ttf");
+} 
+
 $color_black: #091620;
 $color2: #018CD3;
 $color3: #0C6BA1;

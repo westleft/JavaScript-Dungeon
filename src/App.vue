@@ -1,15 +1,12 @@
 <script setup>
-import Header from "@/components/layouts/Header.vue"
-import Footer from "@/components/layouts/Footer.vue"
+import Header from "@/components/layouts/Header.vue";
+import Footer from "@/components/layouts/Footer.vue";
 </script>
 <template>
-<!-- <Header /> -->
+  <Header />
   <router-view></router-view>
-<Footer />
+  <!-- <Footer /> -->
 </template>
 
 <style lang="scss" scoped>
-p {
-  @include flex(center, center)
-}
 </style>
