@@ -2,6 +2,7 @@ const { defineConfig } = require('@vue/cli-service')
 const path = require('path');
 
 module.exports = defineConfig({
+  filenameHashing: false,
   transpileDependencies: true,
   chainWebpack: config => {
     const oneOfsMap = config.module.rule('scss').oneOfs.store
