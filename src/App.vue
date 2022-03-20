@@ -1,15 +1,14 @@
 <script setup>
-import Header from "@/components/layouts/Header.vue"
-import Footer from "@/components/layouts/Footer.vue"
+import Header from "@/components/layouts/Header.vue";
+import Footer from "@/components/layouts/Footer.vue";
+
 </script>
 <template>
-<Header />
-  <p>gg</p>
-  <Footer />
+<div class="cursor" ref="cursor"></div>
+  <!-- <Header /> -->
+  <router-view></router-view>
+  <!-- <Footer /> -->
 </template>
 
 <style lang="scss" scoped>
-p {
-  @include flex(center, center)
-}
 </style>
