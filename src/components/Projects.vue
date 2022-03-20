@@ -56,6 +56,8 @@ const projects = reactive([
       </a>
       中所製作的作品集<br />
       目前專案主要使用原生 JS 開發，部分專案使用 Vue.js<br />
+      <br />
+      不能點選代表未完成，有時間會補上的!
     </p>
     <ul class="selecter">
       <li v-for="(item, index) in projects" :key="item.title">
@@ -72,7 +74,6 @@ const projects = reactive([
         </a>
       </li>
     </ul>
-    <div class="town"></div>
   </section>
 </template>
 
@@ -80,12 +81,14 @@ const projects = reactive([
 #projects {
   @include flex(center, flex-start);
   flex-direction: column;
+  position: relative;
+  top: 100vh;
   // @include size(100vh, 100%);
   width: 100%;
-  padding: 28% 4% 4%;
+  padding-top: 28%;
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 1) 79%,
+    rgba(0, 0, 0, 1) 80%,
     rgba(0, 0, 0, 0) 100%
   );
   z-index: 2;
@@ -94,13 +97,11 @@ const projects = reactive([
     text-decoration: none;
     color: $color_yellow;
   }
-  p {
+  p.project_text {
     text-align: center;
     color: #fff;
     line-height: 140%;
     padding: 1% 0;
-  }
-  p.project_text {
     padding-bottom: 8%;
     font-size: 1.2vw;
   }
@@ -113,6 +114,7 @@ const projects = reactive([
     }
     li {
       @include flex(flex-start, flex-start);
+      position: relative;
       flex-direction: column;
       width: 30%;
       background-color: #10181f;
@@ -131,6 +133,13 @@ const projects = reactive([
           filter: grayscale(0);
         }
       }
+      p.finish {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color_yellow ;
+      }
       h3 {
         padding-bottom: 8px;
         color: $color_white;
@@ -144,7 +153,6 @@ const projects = reactive([
         height: 140px;
         width: 100%;
         opacity: 0.7;
-
         transition: 0.2s;
       }
     }

@@ -3,12 +3,6 @@ import Projects from "@/components/Projects.vue"
 import Title from "@/components/Title.vue"
 import { watch, ref } from "@vue/runtime-core"
 
-const cursor = ref()
-
-const mousemove = (e) => {
-  console.log(e.clientX)
-}
-
 </script>
 <template>
   <div id="home" @mousemove="mousemove" ref="cursor">
@@ -37,12 +31,6 @@ const mousemove = (e) => {
     border: none;
     border-radius: 4px;
   }
-}
-.cursor {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  z-index: 5;
 }
 
 </style>

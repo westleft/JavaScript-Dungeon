@@ -1,7 +1,7 @@
 <script setup>
 </script>
 <template>
-  <section class="fake"></section>
+  <!-- <section class="fake"></section> -->
   <section class="mask">
     <h1><span>JS</span> 地下城</h1>
     <p>六角學院於西元 2019/1/13 徵召超過千位勇者加入百萬年薪遠征團，<br>
