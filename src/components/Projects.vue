@@ -6,6 +6,7 @@ const projects = reactive([
     title: "9x9 乘法表",
     finish: true,
     url: "https://github.com/westleft/99_multiplication",
+    src: "../assets/images/projects/1F.png"
   },
   { title: "時鐘", finish: true, url: "https://github.com/westleft/JS-Clock" },
   {
@@ -70,7 +71,7 @@ const projects = reactive([
           <h3>
             <span>{{ index + 1 }}F</span> | {{ item.title }}
           </h3>
-          <img :src="`/img/${index + 1}F.png`" alt="" />
+          <img :src="require(`@/assets/images/projects/${index+1}F.png`)" alt="">
         </a>
       </li>
     </ul>

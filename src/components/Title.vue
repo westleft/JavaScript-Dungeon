@@ -33,6 +33,7 @@ section.mask {
     rgba(2, 0, 36, 1) 58%
   );
   h1 {
+    font-display: block;
     font-family: "Crayon";
     font-weight: 600;
     color: $color_white;

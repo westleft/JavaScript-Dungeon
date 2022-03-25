@@ -2,7 +2,10 @@ const { defineConfig } = require('@vue/cli-service')
 const path = require('path');
 
 module.exports = defineConfig({
-  filenameHashing: false,
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/JavaScript-Dungeon/'
+    : '/',
+  // filenameHashing: false,
   transpileDependencies: true,
   chainWebpack: config => {
     const oneOfsMap = config.module.rule('scss').oneOfs.store
