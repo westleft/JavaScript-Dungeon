@@ -1,16 +1,20 @@
 @font-face {
-    font-family: 'Crayon';
-    src: url("@/assets/fonts/crayon.ttf");
+  font-family: "Crayon";
+  src: url("@/assets/fonts/crayon.ttf");
 }
 @font-face {
-    font-family: 'WenKai';
-    src: url("@/assets/fonts/LXGWWenKai-Regular.ttf");
-} 
+  font-family: "WenKai";
+  src: url("@/assets/fonts/LXGWWenKai-Regular.ttf");
+}
+
+* {
+  font-display: block;
+}
 
 $color_black: #091620;
-$color2: #018CD3;
-$color_blue: #0C6BA1;
-$color_white: #F6F6F6;
-$color_gray: #8C969B;
-$color_yellow: #FAC350;
-$color7: #8AB5CB;
+$color2: #018cd3;
+$color_blue: #0c6ba1;
+$color_white: #f6f6f6;
+$color_gray: #8c969b;
+$color_yellow: #fac350;
+$color7: #8ab5cb;

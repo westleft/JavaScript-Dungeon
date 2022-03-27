@@ -17,13 +17,13 @@ const hand = () => {
         <router-link to="/"> <span>JS</span> 地下城 </router-link>
       </li>
       <li>
-        <router-link to="/about"> 關於我 </router-link>
+        <router-link to="/about" @click="hand"> 關於我 </router-link>
       </li>
       <li>
         <a href="https://github.com/westleft" target="_blank"> Github </a>
       </li>
       <li>
-        <router-link to="/about"> 部落格 </router-link>
+        <a href="https://nerdcc.com" target="_blank">部落格</a>
       </li>
     </ul>
   </div>
@@ -37,6 +37,10 @@ const hand = () => {
   left: 40px;
   z-index: 5;
   cursor: pointer;
+  @include mobile {
+    top: 20px;
+    left: 20px;
+  }
   span.menu {
     @include size(6px, 46px);
     position: fixed;
@@ -44,6 +48,9 @@ const hand = () => {
     background-color: $color_yellow;
     opacity: 0.8;
     border-radius: 8px;
+    @include mobile {
+      @include size(4px, 28px);
+    }
     &::after,
     &::before {
       @include size(6px, 46px);
@@ -52,12 +59,21 @@ const hand = () => {
       position: fixed;
       background-color: $color_yellow;
       border-radius: 8px;
+      @include mobile {
+        @include size(4px, 28px);
+      }
     }
     &::after {
       top: 56px;
+      @include mobile {
+        top: 36px;
+      }
     }
     &::before {
       top: 24px;
+      @include mobile {
+        top: 28px;
+      }
     }
   }
 }
@@ -74,6 +90,11 @@ span.close {
   font-size: 2vw;
   cursor: pointer;
   // display: none;
+  @include mobile {
+    font-size: 6vw;
+    top: 12px;
+    right: -12px;
+  }
 }
 .side_bar {
   @include flex(flex-start, flex-start);
@@ -86,6 +107,10 @@ span.close {
   left: -20%;
   transition: 0.2s;
   font-family: "WenKai";
+  @include mobile {
+    width: 40%;
+    left: -40%;
+  }
   ul {
     padding: 12% 20%;
   }

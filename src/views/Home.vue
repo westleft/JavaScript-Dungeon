@@ -1,31 +1,22 @@
 <script setup>
-import Projects from "@/components/Projects.vue"
-import Title from "@/components/Title.vue"
-import SideBar from "@/components/layouts/SideBar.vue"
-import { watch, ref } from "@vue/runtime-core"
+import Projects from "@/components/Projects.vue";
+import Title from "@/components/Title.vue";
+import SideBar from "@/components/layouts/SideBar.vue";
 
-const isload = ref(true)
-
-console.log(isload)
 
 </script>
 <template>
   <div id="home">
-
-    <SideBar />
     <Title />
     <Projects />
 
     <!-- <button>點我查看專案</button> -->
   </div>
-  <div class="cursor"></div>
 </template>
 
 <style lang="scss" scoped>
-
 #home {
   @include flex(center, center);
-  font-display: block;
   width: 100%;
   flex-direction: column;
   background-image: url("@/assets/images/Castle_background.jpg");
@@ -41,5 +32,4 @@ console.log(isload)
     border-radius: 4px;
   }
 }
-
 </style>

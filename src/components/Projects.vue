@@ -6,7 +6,7 @@ const projects = reactive([
     title: "9x9 乘法表",
     finish: true,
     url: "https://github.com/westleft/99_multiplication",
-    src: "../assets/images/projects/1F.png"
+    src: "../assets/images/projects/1F.png",
   },
   { title: "時鐘", finish: true, url: "https://github.com/westleft/JS-Clock" },
   {
@@ -48,6 +48,7 @@ const projects = reactive([
   { title: "死亡筆記本", finish: false },
 ]);
 </script>
+
 <template>
   <section id="projects">
     <p class="project_text">
@@ -71,7 +72,7 @@ const projects = reactive([
           <h3>
             <span>{{ index + 1 }}F</span> | {{ item.title }}
           </h3>
-          <img :src="require(`@/assets/images/projects/${index+1}F.png`)" alt="">
+          <img :src="require(`@/assets/images/${index + 1}F.png`)" alt="" />
         </a>
       </li>
     </ul>
@@ -84,7 +85,6 @@ const projects = reactive([
   flex-direction: column;
   position: relative;
   top: 100vh;
-  // @include size(100vh, 100%);
   width: 100%;
   padding-top: 28%;
   background: linear-gradient(
@@ -94,6 +94,9 @@ const projects = reactive([
   );
   z-index: 2;
   font-family: "WenKai";
+  @include mobile {
+    padding-top: 150%;
+  }
   a {
     text-decoration: none;
     color: $color_yellow;
@@ -105,6 +108,10 @@ const projects = reactive([
     padding: 1% 0;
     padding-bottom: 8%;
     font-size: 1.2vw;
+    @include mobile {
+      font-size: 3vw;
+      padding: 4% 2%;
+    }
   }
   ul.selecter {
     @include flex(center, space-around);
@@ -124,6 +131,9 @@ const projects = reactive([
       border-radius: 12px;
       margin: 1% 0 2% 0;
       transition: 0.2s;
+      @include mobile {
+        width: 100%;
+      }
       a {
         width: 100%;
       }
@@ -139,7 +149,7 @@ const projects = reactive([
         top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: $color_yellow ;
+        color: $color_yellow;
       }
       h3 {
         padding-bottom: 8px;
